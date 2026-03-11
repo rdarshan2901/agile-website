@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> AiDreamLab.Solutions</title>
+  <meta
+    name="description"
+    content="Elite AI Trainings and Custom AI Solutions for modern businesses and mid-career IT professionals."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <section class="n8n-bg">
+  <!-- Background Orbs -->
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+  <img src="assets/images/logo.jpeg" alt="AgileBodhi AI Logo" class="site-logo" />
+  <div class="brand-text">
+    <span class="brand-title">AiDreamLab.Solutions</span>
+    <span class="brand-subtitle">Train. Transform. Deploy.</span>
+  </div>
+</a>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#program">AI Leadership Program</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#program">AI Leadership Program</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          
+
+          <h1 class="hero-title reveal-up">
+            <span class="first1">AiDreamLab</span>
+            <span class="gradient-text">Deploy AI that actually works.</span>
+          </h1>
+
+          <p class="hero-subtitle reveal-up">
+             AiDreamLab.Solutions helps organizations and mid-career IT professionals unlock growth through
+            <strong>Elite AI Trainings</strong> and <strong>Custom AI Solutions</strong> —
+            with practical execution, leadership transformation, and business-first AI adoption.
+          </p>
+
+          <div class="hero-actions reveal-up">
+            <a href="pages/program-ai-leadership.html" class="btn btn-primary btn-lg">Explore AI Leadership Program</a>
+            <a href="#offerings" class="btn btn-secondary btn-lg">See Our Offerings</a>
+          </div>
+
+          <div class="hero-metrics reveal-up">
+            <div class="metric-card glass">
+              <h3>02</h3>
+              <p>Core Offerings</p>
+            </div>
+            <div class="metric-card glass">
+              <h3>AI</h3>
+              <p>Leadership Focused</p>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="hero-right reveal-scale">
+          <div class="hero-visual glass">
+            <canvas id="networkCanvas"></canvas>
+
+            <div class="node-card node-card-left">
+              <span class="node-label">Elite AI Trainings</span>
+              <p>Leadership • Prompting • AI Workflows</p>
+            </div>
+
+            <div class="center-brain">
+              <div class="brain-core">AI</div>
+              <div class="pulse pulse-1"></div>
+              <div class="pulse pulse-2"></div>
+            </div>
+
+            <div class="node-card node-card-right">
+              <span class="node-label">Custom AI Solutions</span>
+              <p>Automation • Agents • Deployment</p>
+            </div>
+
+            <div class="floating-chip chip-1">Leadership Transformation</div>
+            <div class="floating-chip chip-2">Automation Systems</div>
+            <div class="floating-chip chip-3">Mid-Career IT Professionals</div>
+            <div class="floating-chip chip-4">AI Strategy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offerings -->
+    <section class="section offerings" id="offerings">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Offerings</span>
+          <h2>Two powerful ways to work with us</h2>
+          <p>
+            Whether you want to transform your people capability or implement business-ready AI,
+            we design solutions that are modern, practical, and execution-focused.
+          </p>
+        </div>
+
+        <div class="offerings-grid">
+          <article class="offering-card glass reveal-up">
+            <div class="offering-icon gradient-purple">✦</div>
+            <h3>Elite AI Trainings</h3>
+            <p>
+              Premium learning experiences crafted for professionals, leaders, and teams who need
+              applied AI understanding with business relevance.
+            </p>
+
+            <ul>
+              <li>Leadership-oriented AI learning journeys</li>
+              <li>Hands-on prompting and AI productivity workflows</li>
+              <li>Role-based modules for IT and business stakeholders</li>
+              <li>Transformation-ready learning outcomes</li>
+            </ul>
+
+            <a href="#program" class="btn btn-primary">View flagship program →</a>
+          </article>
+
+          <article class="offering-card glass reveal-up">
+            <div class="offering-icon gradient-green">⬢</div>
+            <h3>Custom AI Solutions</h3>
+            <p>
+              Tailored solutions to automate workflows, augment decision-making, and bring modern
+              AI systems into your business with clarity and speed.
+            </p>
+
+            <ul>
+              <li>AI workflow automation</li>
+              <li>Internal copilots and AI agents</li>
+              <li>Knowledge search and support systems</li>
+              <li>Deployment strategy and implementation support</li>
+            </ul>
+
+            <a href="#contact"  class="btn btn-primary">Request solution discovery →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flagship Program -->
+    <section class="section flagship" id="program">
+      <div class="container flagship-grid">
+        <div class="flagship-left reveal-left">
+          <span class="eyebrow">Flagship Program</span>
+          <h2>AI Leadership Transformation Program for Mid-Career IT Professionals</h2>
+          <p class="flagship-copy">
+            A modern landing-section preview for your core offering. Built for professionals who
+            want to move from technical execution to strategic AI leadership.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item glass">
+              <span>01</span>
+              <div>
+                <h4>AI strategy for leaders</h4>
+                <p>Understand where AI fits into delivery, decision-making, and transformation.</p>
+              </div>
+            </div>
+
+            <div class="feature-item glass">
+              <span>02</span>
+              <div>
+                <h4>Business-first execution</h4>
+                <p>Learn practical use cases, frameworks, and leadership communication.</p>
+              </div>
+            </div>
+
+            <div class="feature-item glass">
+              <span>03</span>
+              <div>
+                <h4>Career reinvention edge</h4>
+                <p>Build confidence to lead AI-driven initiatives in modern IT environments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="pages/program-ai-leadership.html" class="btn btn-primary">Open Program Page</a>
+            <a href="#contact" class="btn btn-secondary">Talk to Us</a>
+          </div>
+        </div>
+
+        <div class="flagship-right reveal-right">
+          <div class="program-showcase glass">
+            <div class="program-topbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="program-body">
+              <div class="program-badge">Flagship Learning Experience</div>
+              <h3>Leadership. AI. Reinvention.</h3>
+              <p>
+                Designed for mid-career IT professionals ready to become AI-driven leaders.
+              </p>
+
+              <div class="program-tags">
+                <span>AI Leadership</span>
+                <span>Prompting</span>
+                <span>Use Cases</span>
+                <span>Transformation</span>
+                <span>Strategy</span>
+              </div>
+
+              <div class="program-stats">
+                <div>
+                  <strong>Mid-Career</strong>
+                  <span>Audience fit</span>
+                </div>
+                <div>
+                  <strong>Applied</strong>
+                  <span>Learning model</span>
+                </div>
+                <div>
+                  <strong>Modern</strong>
+                  <span>Leadership lens</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section why-us" id="why-us">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Why  AiDreamLab.Solutions</span>
+          <h2>Built for modern AI adoption</h2>
+          <p>
+            We combine modern design thinking, practical AI enablement, and leadership relevance.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card glass reveal-up">
+            <h3>Business-first AI</h3>
+            <p>We focus on outcomes, adoption, and usefulness instead of hype.</p>
+          </div>
+
+          <div class="why-card glass reveal-up">
+            <h3>Leadership transformation</h3>
+            <p>Programs are crafted for decision-makers and ambitious professionals.</p>
+          </div>
+
+          <div class="why-card glass reveal-up">
+            <h3>Modern solution design</h3>
+            <p>From automation to copilots, every solution is built with UX and scale in mind.</p>
+          </div>
+
+          <div class="why-card glass reveal-up">
+            <h3>Practical execution</h3>
+            <p>Actionable playbooks, not vague theory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insights -->
+    <section class="section insights" id="insights">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Insights</span>
+          <h2>Ideas, frameworks, and AI trends</h2>
+          <p>We will later connect these cards to blog pages. For now this is homepage-ready UI.</p>
+        </div>
+
+        <div class="insights-grid">
+          <article class="insight-card glass reveal-up">
+            <span class="insight-tag">Leadership</span>
+            <h3>How IT leaders should approach AI in 2026</h3>
+            <p>Practical thinking for leaders navigating AI adoption, teams, and transformation.</p>
+            <a href="#" class="text-link">Read article →</a>
+          </article>
+
+          <article class="insight-card glass reveal-up">
+            <span class="insight-tag">Training</span>
+            <h3>Why mid-career professionals must re-skill with AI</h3>
+            <p>AI is changing how technical professionals create value and lead execution.</p>
+            <a href="#" class="text-link">Read article →</a>
+          </article>
+
+          <article class="insight-card glass reveal-up">
+            <span class="insight-tag">Solutions</span>
+            <h3>Where custom AI solutions create the fastest ROI</h3>
+            <p>Automation, support, workflow intelligence, and knowledge operations.</p>
+            <a href="#" class="text-link">Read article →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-band">
+      <div class="container">
+        <div class="cta-panel glass reveal-up">
+          <div>
+            <span class="eyebrow">Let’s build something meaningful</span>
+            <h2>Ready to launch your AI journey?</h2>
+            <p>
+              Whether you need leadership training or custom AI deployment, we can shape the next step together.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <a href="#" class="btn btn-secondary">Download Brochure</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-left reveal-left">
+          <span class="eyebrow">Contact</span>
+          <h2>Start the conversation</h2>
+          <p>
+            This is a modern lead form section. Later you can connect it to Formspree, Web3Forms,
+            EmailJS, Netlify Forms, or your backend.
+          </p>
+
+          <form class="contact-form glass">
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Company / Role" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <select>
+              <option selected disabled>Select your interest</option>
+              <option>Elite AI Trainings</option>
+              <option>Custom AI Solutions</option>
+              <option>AI Leadership Transformation Program</option>
+            </select>
+            <textarea rows="5" placeholder="Tell us what you are looking for..."></textarea>
+            <button type="button" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-right reveal-right">
+          <div class="contact-card glass">
+            <h3>What happens next?</h3>
+            <ul class="contact-steps">
+              <li><span>1</span> We understand your use case or learning need</li>
+              <li><span>2</span> We recommend the right training or solution path</li>
+              <li><span>3</span> We plan the next steps for rollout or enrollment</li>
+            </ul>
+          </div>
+
+          <div class="contact-card glass">
+            <h3>Primary Focus Areas</h3>
+            <div class="program-tags">
+              <span>AI Leadership</span>
+              <span>Prompt Engineering</span>
+              <span>Workflow Automation</span>
+              <span>AI Agents</span>
+              <span>Enterprise Adoption</span>
+              <span>Digital Transformation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <div class="brand-mark">A</div>
+          <div class="brand-text">
+            <span class="brand-title"> AiDreamLab.Solutions</span>
+            <span class="brand-subtitle">Train. Transform. Deploy.</span>
+          </div>
+        </div>
+        <p class="footer-copy">
+          Elite AI Trainings and Custom AI Solutions for next-generation businesses and IT leaders.
+        </p>
+      </div>
+
+      <div>
+        <h4>Sections</h4>
+        <a href="#offerings">Offerings</a>
+        <a href="#program">Program</a>
+        <a href="#why-us">Why Us</a>
+      </div>
+
+      <div>
+        <h4>Pages</h4>
+        <a href="pages/trainings.html">Trainings</a>
+        <a href="pages/solutions.html">Solutions</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Reach</h4>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+        <a href="#">Schedule Call</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026  AiDreamLab.Solutions. All rights reserved.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  </section>
+</body>
+</html>
