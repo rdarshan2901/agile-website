@@ -10,8 +10,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../css/style.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<link rel="stylesheet" href="../css/style.css">
+ <script src="../js/app.js"></script>
 </head>
 
 <body>
@@ -19,29 +23,42 @@
 <section class="n8n-bg">
 
 <!-- HEADER -->
-<header class="site-header">
-<div class="container nav-wrap">
-
-<a href="../index.html" class="brand">
-<img src="../assets/images/logo.jpeg" class="site-logo">
-<div class="brand-text">
-<span class="brand-title">AiDreamLab.Solutions</span>
-<span class="brand-subtitle">Train. Transform. Deploy.</span>
-</div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+  <img src="..\assets\images\logo.jpeg" alt="AgileBodhi AI Logo" class="site-logo" />
+  <div class="brand-text">
+    <span class="brand-title">AiDreamLab.Solutions</span>
+    <span class="brand-subtitle">Train. Transform. Deploy.</span>
+  </div>
 </a>
 
-<nav class="main-nav">
-<a href="../index.html">Home</a>
-<a href="../index.html#offerings">Offerings</a>
-<a href="#">AI Leadership Program</a>
-<a href="../index.html#contact">Contact</a>
-</nav>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#program">AI Leadership Program</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<a href="../index.html#contact" class="btn btn-primary">Book Strategy Call</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+      </div>
 
-</div>
-</header>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">☰</button>
+    </div>
 
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#program">AI Leadership Program</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
 <!-- HERO -->
 <section class="section hero">
@@ -52,7 +69,7 @@
 <span class="eyebrow">Flagship Program</span>
 
 <h1 class="hero-title">
-AI Leadership Transformation Program
+ <span class="first1">AI Leadership</span> Transformation Program
 <span class="gradient-text">for Mid-Career IT Professionals</span>
 </h1>
 
@@ -96,7 +113,7 @@ transition from execution roles to strategic AI leadership.
 
 <div class="section-head">
 <span class="eyebrow">Who This Is For</span>
-<h2>Built for professionals ready to lead AI initiatives</h2>
+<h2>Manage the Ai, Don't just Code It </h2>
 </div>
 
 <div class="why-grid">
@@ -139,7 +156,51 @@ transition from execution roles to strategic AI leadership.
 <div class="offerings-grid">
 
 <div class="offering-card glass">
-<h3>Module 1</h3>
+<h3>Phase 1</h3>
+<p>Executive AI Strategy & Foundations (Weeks 1-4)</p>
+
+<ul>
+<li>Week 1: AI Fundamentals & Business Alignment</li>
+<li>Week 2: Machine Learning for Project Leaders
+</li>
+<li>Week 3: AI Strategy & The Maturity Model</li>
+<li>Week 4: Enterprise Vendor Evaluation (Build vs. Buy)</li>
+</ul>
+
+</div>
+
+
+<div class="offering-card glass">
+<h3>phase 2</h3>
+<p>Personal Productivity & Advanced Prompting (Weeks 5-8)</p>
+
+<ul>
+<li>Week 5: Prompt Engineering Frameworks</li>
+<li>Week 6: Advanced Prompt Chanining & Structured Outputs
+</li>
+<li>Week 7: AI Knowledge Assistants(RAG Lite)</li>
+<li>Week 8: Enterprise Workspace AI</li>
+</ul>
+
+</div>
+
+
+<div class="offering-card glass">
+<h3>phase 3</h3>
+<p>Personal Productivity & Advanced Prompting (Weeks 5-8)</p>
+<ul>
+<li>Week 9: Prompt Engineering Frameworks</li>
+<li>Week 10: Advanced Prompt Chanining & Structured Outputs
+</li>
+<li>Week 11: AI Knowledge Assistants(RAG Lite)</li>
+<li>Week 12: Enterprise Workspace AI</li>
+</ul>
+
+</div>
+
+
+<div class="offering-card glass">
+<h3>Phase 4</h3>
 <p>Understanding the AI Landscape</p>
 
 <ul>
@@ -152,29 +213,57 @@ transition from execution roles to strategic AI leadership.
 
 
 <div class="offering-card glass">
-<h3>Module 2</h3>
-<p>Prompt Engineering & AI Workflows</p>
+<h3>Phase 5</h3>
+<p>Understanding the AI Landscape</p>
 
 <ul>
-<li>Advanced prompting techniques</li>
-<li>AI productivity systems</li>
-<li>Automation workflows</li>
+<li>AI evolution and current capabilities</li>
+<li>Generative AI ecosystem</li>
+<li>Business implications</li>
 </ul>
 
 </div>
 
 
 <div class="offering-card glass">
-<h3>Module 3</h3>
-<p>AI Strategy & Leadership</p>
+<h3>Phase 6</h3>
+<p>Understanding the AI Landscape</p>
 
 <ul>
-<li>AI opportunity identification</li>
-<li>AI transformation frameworks</li>
-<li>Communicating AI strategy</li>
+<li>AI evolution and current capabilities</li>
+<li>Generative AI ecosystem</li>
+<li>Business implications</li>
 </ul>
 
 </div>
+
+
+<div class="offering-card glass">
+<h3>Phase 7</h3>
+<p>Understanding the AI Landscape</p>
+
+<ul>
+<li>AI evolution and current capabilities</li>
+<li>Generative AI ecosystem</li>
+<li>Business implications</li>
+</ul>
+
+</div>
+
+<div class="offering-card glass">
+<h3>Phase 8</h3>
+<p>Understanding the AI Landscape</p>
+
+<ul>
+<li>AI evolution and current capabilities</li>
+<li>Generative AI ecosystem</li>
+<li>Business implications</li>
+</ul>
+
+</div>
+
+
+
 
 </div>
 
